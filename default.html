@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+		<title>Ch.E.M.I.C.</title>
+
+		<link href="./styles/style2.css" rel="stylesheet" type="text/css" />
+	</head>
+
+	<body>
+
+		<div id="container">
+			<div id="content">
+				<h2>Ch.E.M.I.C.</h2>
+				<h3>Chemical Element Models Interactive Construct</h3>
+				<hr />
+				<div>
+					<p>
+						Ch.E.M.I.C. is an interactive educational resource for 2-D and 3-D visualization of atomic elements from the periodic table.
+						This web application is currently in development and is in <i><strong>ALPHA</strong></i> release at this time.  
+						Updates are being made almost daily so be sure to come back and checkout the progress.
+					</p>
+						The web application is written completely in javascript and WebGL using <a target="_blank" href="https://threejs.org/">three.js</a> 
+						library.
+					<h2>How to Use Ch.E.M.I.C.</h2>
+					<p>
+						To launch the application click on the tile below.  There is a lot of data to be processed so depending on connection speed and 
+						hardware it may take a few moments to load.
+					</p>
+				</div>
+				<center>
+					<a target="_blank" href="containers/chemic.htm">
+					<img class="tile" id="chemic" src="screens/chemic.png" alt="Ch.E.M.I.C" title="Ch.E.M.I.C"/>
+					</a>
+					<br/>
+					v.0.2.1.4.05.17
+				</center>
+				<div>
+					<h3>Controls</h3>
+					Controls enabled for desktop and mobile devices, however the are only the 3-D SPDF Model Viewport.
+					<center>
+						<p>
+							rotate: left mouse / 1 finger | zoom: mouse wheel / 2 fingers (squeeze or stretch) | pan: right mouse / 3 fingers
+						</p>
+					</center>
+					<h3>Viewports</h3>
+					The visualization presents 3 distinct view ports, a <u>periodic table viewport</u>, <u>a Bohr model viewport</u>, and the <u>SPDF model viewport</u>.
+					As you can see the periodic table viewport shows the periodic table of elements including their atomic number, symbol, and mass.
+					The Bohr model is the 2-D representation of the atomic structure, including nuclues (neutrons and protons) and electron shells.
+					This model is conceptual to help illustrate the composition of an atoms electrons around its nucleus.  Finally the SPDF model (named
+					as such for the orbital types of atomic structures, those being S, P, D, and F) represents the 3-D composition of the atomic structure 
+					notionally indicating the probability of an electron appearing in 3-D space around the nucleus.  Again, this is notional, and encourage 
+					you the user to	research more information on SPDF models.
+				</div>
+				<div class="tiles">
+					<!--img class="screenshot-large" src="chemic/screens/launch.png" alt="Ch.E.M.I.C Loaded" title="Ch.E.M.I.C Loaded"/--> 
+					<img class="screenshot" src="screens/visualization.png" alt="Krypton Visualization" title="Krypton Visualization"/> 
+				</div>
+				<div>
+					<h3>Selection</h3>
+					Selecting an element from the periodic table is accomplished by clicking on an element tile in the periodic table.
+					Clearing the selection is achieve by clicking anywhere in the periodic table viewport that is blank - i.e. anywhere on the background.
+					All constructs are assumed to be non-ionic stable representations of the selected element. 
+				</div>
+				<div class="tiles">
+					<img class="screenshot" src="screens/selection.png" alt="Selecting an element..." title="Selecting an element..."/>
+					<img class="screenshot" src="screens/bohrModel.png" alt="Bohr Model" title="Bohr Model"/> 
+					<img class="screenshot" src="screens/spdfModel.png" alt="SPDF Model" title="SPDF Model"/> 
+				</div>
+				<hr/>
+				<div>
+				<h4>Updates</h4>
+				<ul>
+					<li>v.0.2.1.4.05.17: Reset camera on selection so that SPDF model is completely within FOV.</li>
+					<li>v.0.2.0.4.05.17: Cleanup of models when change in selection occurs.  All SPDF orbitals created in proper sequence for all elements.</li>
+					<li>v.0.1.3.4.03.17: Corrected creations of SPDF orbitals to fill in proper sequence up to and including period 5.</li>
+					<li>v.0.1.2.3.30.17: Changed SPDF Models background for better contrast and turned on antialiasing.</li>
+					<li>v.0.1.1.3.30.17: Update to SPDF Models for all elements up to and including period 4.</li>
+					<li>v.0.1.0.3.29.17: Initial Release. Selection, Periodic Table, all Bohr Models, and SPDF Models for all elements up to and including period 3.</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
