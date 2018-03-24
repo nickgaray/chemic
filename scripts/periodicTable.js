@@ -1,13 +1,11 @@
-﻿/******************************************************************************
+/******************************************************************************
 
-Copyright © 2017 - Nick Garay - All Rights Reserved
-
-You may NOT use, copy, distribute or otherwise modify the content on this 
-module without written permission. 
+Author - Nick Garay - https://github.com/nickgaray
 
 All reference material copyright of the respective owners. 
 
 ******************************************************************************/
+
 
 //*****************************************************************************
 // Periodic Table
